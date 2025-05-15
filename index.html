@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수리 - 퍼스널 브랜딩</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="수리의 퍼스널 브랜딩 웹사이트입니다.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#" class="logo-text">수리</a>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">소개</a>
+                    <a href="#projects">프로젝트</a>
+                    <a href="#blog">블로그</a>
+                    <a href="#contact">연락하기</a>
+                </div>
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="다크 모드 전환" role="switch" aria-checked="false">
+                    <span class="toggle-track">
+                        <span class="toggle-icon light">☀️</span>
+                        <span class="toggle-icon dark">🌙</span>
+                    </span>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="메뉴 토글">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">안녕하세요,<br><span class="highlight">수리</span>입니다</h1>
+                <p class="hero-subtitle">웹 개발자 | UX 디자이너 | 크리에이터</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                    <a href="#contact" class="btn btn-secondary">연락하기</a>
+                </div>
+                <div class="scroll-down">
+                    <a href="#about">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-image" data-aos="fade-right">
+                    <div class="profile-frame">
+                        <img src="https://via.placeholder.com/400" alt="수리 프로필 이미지" width="400" height="400">
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <p>저는 사용자 중심의 웹 경험을 디자인하고 개발하는 일을 하고 있습니다. 5년간의 프론트엔드 개발 경험과 UX 디자인 배경을 바탕으로, 아름답고 기능적인 웹사이트를 만들어 나가는 것이 목표입니다.</p>
+                    <p>디지털 제품의 기술적 구현뿐만 아니라 사용자 경험의 모든 측면에 관심이 있으며, 특히 접근성과 인클루시브 디자인에 중점을 두고 있습니다.</p>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>기술 스택</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">HTML5/CSS3</span>
+                                <span class="skill-tag">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>디자인 툴</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Adobe XD</span>
+                                <span class="skill-tag">Photoshop</span>
+                                <span class="skill-tag">Illustrator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">프로젝트</h2>
+                <p class="section-description">제가 참여한 주요 프로젝트들입니다.</p>
+                <div class="section-divider center"></div>
+            </div>
+            <div id="projects-container" class="projects-container">
+                <!-- Projects will be dynamically added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">블로그</h2>
+                <p class="section-description">제가 작성한 최신 글들을 확인해보세요.</p>
+                <div class="section-divider center"></div>
+            </div>
+            <div id="blog-container" class="blog-container">
+                <!-- Blog cards will be dynamically added by JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-secondary">더 많은 글 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="accent-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="section-header text-center">
+                    <h2 class="section-title">뉴스레터 구독하기</h2>
+                    <p class="section-description">최신 프로젝트 업데이트와 유용한 정보를 이메일로 받아보세요.</p>
+                    <div class="section-divider center"></div>
+                </div>
+                
+                <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/xayrjpbo" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="이메일 주소" required class="email-input">
+                        <button type="submit" class="subscribe-btn" aria-label="뉴스레터 구독하기">구독하기</button>
+                    </div>
+                    <div id="newsletter-success" class="success-message">
+                        구독해 주셔서 감사합니다! 곧 이메일이 발송됩니다.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">연락하기</h2>
+                <p class="section-description">프로젝트 협업이나 질문이 있으시면 연락주세요.</p>
+                <div class="section-divider center"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>이메일</h3>
+                            <p>contact@suri.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>위치</h3>
+                            <p>서울특별시, 대한민국</p>
+                        </div>
+                    </div>
+                    <div class="social-links-large">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 방문하기">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 방문하기">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter 프로필 방문하기">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xayrjpbo" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">제목</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>수리</h3>
+                    <p>웹 개발자 | UX 디자이너 | 크리에이터</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">소개</a>
+                    <a href="#projects">프로젝트</a>
+                    <a href="#blog">블로그</a>
+                    <a href="#contact">연락하기</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 방문하기">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 방문하기">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter 프로필 방문하기">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 수리. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
